@@ -25,10 +25,15 @@ sigma = zeros(1, size(X, 2));
 %
 % Hint: You might find the 'mean' and 'std' functions useful.
 %       
-
-
-
-
+% X_norm(1:10,:)
+X_mean = mean(X);
+% X_mean
+X_std = std(X);
+% X_std
+X_norm -= X_mean;
+% X_norm(1:10,:)
+X_norm ./= X_std;
+% X_norm(1:10,:)
 
 
 
