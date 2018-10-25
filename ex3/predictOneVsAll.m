@@ -28,8 +28,10 @@ X = [ones(m, 1) X];
 %       max element, for more information see 'help max'. If your examples 
 %       are in rows, then, you can use max(A, [], 2) to obtain the max 
 %       for each row.
-%       
-
+%      
+% size(predict) = 5000x10 
+predictions = sigmoid(X*all_theta');
+[_, p] = max(predictions, [], 2);
 
 
 
